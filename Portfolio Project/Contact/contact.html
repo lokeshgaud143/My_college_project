@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Contact to Lokesh Gaud</title>
+</head>
+
+<body>
+    <!-- <div class="icons">
+        <div class="myicon">
+            <br><br>
+            <center>
+
+                <div class="location">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png"
+                        alt="" srcset="">
+                </div>
+                <div class="location">
+                    <img src="https://image.similarpng.com/very-thumbnail/2020/07/Linkedin-logo-on-transparent-Background-PNG-.png"
+                        alt="" srcset="">
+                </div>
+                <div class="location">
+                    <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png"
+                        alt="" srcset="">
+
+                </div>
+                <div class="location">
+                    <img src="https://assets.tryhackme.com/img/favicon.png" alt="">
+                </div>
+                <div class="location">
+                    <img src="https://p7.hiclipart.com/preview/308/977/225/hackerearth-hackathon-logo-organization-business-business.jpg"
+                        alt="">
+                </div>
+            </center>
+        </div>
+    </div> -->
+
+    <!-- <input type="checkbox" name="" id="saved"> -->
+
+    <div class="contact" id="contact">
+        <br><br>
+        <!-- <label for="Name"></label> -->
+        <form action="" method="post" name="google-sheet">
+            <center>
+                <h2 ="flip-down" -duration="80000"> <i style="color: #F75127;" class="fa-solid fa-headphones fa-flip-horizontal"></i> Get In Touch</h2>
+                <!-- <p>Conect with me for work together and for Hire</p> -->
+            </center>
+            <input ="flip-down" -delay="100" -duration="2s" type="name" name="name" required
+                placeholder="Enter your name" autofocus autocapitalize="title" autocomplete="cc-name"><br>
+            <input ="flip-down" -delay="100" -duration="2s" type="email" name="mail" id="mail"
+                placeholder="Enter your mail id here" required autofocus autocomplete="email"><br>
+            <input ="flip-down" -delay="100" -duration="2s" type="number" name="mobile" id="mobile"
+                placeholder="Enter your Mobile Number" required autofocus autocomplete="mobile"><br>
+            <textarea ="flip-down" -delay="100" -duration="2s" name="massage" id="" cols="30"
+                rows="2" placeholder="Enter your massage" required autofocus autocomplete="off"></textarea>
+            <br><br>
+            <center>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </center>
+        </form>
+    </div>
+    <br>
+    
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbylrLjFWGONpPFtNHRQVWOlVN1Xc9o_L6-J0xzBxdWDizlvyRxOGYjGWqCbrEtZ4WaB/exec'
+        const form = document.forms['google-sheet']
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thank you! your form is submitted successfully."))
+                .then(() => { window.location.reload(); })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="gsap.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

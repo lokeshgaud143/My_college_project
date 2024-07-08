@@ -1,0 +1,132 @@
+html{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-image: url(imag/contact-removebg-preview.png); */
+    /* background-color: #ffffff; */
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.contact {
+    height: 100vh;
+    background-color: rgb(253, 253, 253);
+    color: rgb(255, 255, 255);
+    width:100%;
+    background-image: url(https://cdni.iconscout.com/illustration/premium/thumb/contact-us-5795988-4849052.png?f=webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* margin-top: -6%; */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.contact h2 {
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    color: #1A1815;
+    position: relative;
+}
+.contact p{
+    text-transform: uppercase;
+    display: inline;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+    border-bottom: 1px solid aliceblue;
+    text-decoration: underline;
+    
+}
+#mobile{
+    input-security:auto ;
+    system: numeric;
+}
+.contact input,
+.contact textarea {
+    width: 50%;
+    translate: 50%;
+    margin-bottom: 5%;
+    height: 60px;
+    border: none;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-top: none;
+    border-right: none;
+    padding-left: 20px;
+    border-radius: 40px;
+    outline: none;
+    background-color: rgba(95, 91, 90, 0.382);
+    color: aliceblue;
+
+}
+
+.contact button {
+    padding: 5px 30px;
+    margin: 20px;
+    margin-top: -20px;
+    background: transparent;
+    border-radius: 5px;
+    color: rgb(0, 12, 21);
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 2px solid orangered; */
+    cursor: pointer;
+}
+.contact button:hover{
+    /* background-color: rgb(rgb(36, 140, 158), rgb(113, 106, 95), rgb(170, 97, 41)); */
+    background-color: #FEC600;
+}
+@media (max-width:700px) {
+    .contact input, .contact textarea{
+        width:90%;
+        translate: 0%;
+        margin: 20px;
+    }
+}
+
+@media (max-width:620px) {
+    .contact input, .contact textarea{
+        width: 90%;
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+    form{
+        margin: 0px;
+        padding: 0;
+        padding-left: 20px;
+    }
+}
+@media (max-width:620px) {
+    form{
+        padding: 10px;
+    }
+}
+
+/* this is ICONS */
+
+.icons{
+    height: fit-content;
+    width: 100%;
+    background-color: #ffffff;
+    color: #FEC600;
+    margin-top:-1%;
+    position: fixed;
+}
+
+.location{
+    display: inline;
+    margin: 2%;
+}
+.myicon img{
+    width:50px;
+    display: inline
+}

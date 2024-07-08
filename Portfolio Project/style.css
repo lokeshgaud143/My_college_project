@@ -1,0 +1,737 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0;
+  background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.logoicon {
+  border-radius: 50%;
+}
+
+.cursor {
+  height: 20px;
+  width: 20px;
+  background-color: #ffbd39;
+  position: fixed;
+  border-radius: 50%;
+}
+
+@media (max-width: 800px) {
+  .cursor {
+    display: none;
+  }
+}
+
+* {
+  overflow: visible;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: #000000;
+  /* background-image: url(/imag/ricardo-rocha-oA5ROA_2QLg-unsplash.jpg); */
+  background-size: cover;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  background-position: right;
+}
+
+::selection {
+  background: #0eac62;
+  color: #fff;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+header {
+  height: fit-content;
+  width: 100%;
+  position: absolute;
+  background-color: #000000;
+  border-bottom: 2px solid black;
+  border-bottom-style: dotted;
+}
+
+nav {
+  cursor: auto;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background-color: #302e2e;
+}
+
+nav li {
+  list-style: none;
+  margin-left: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav li a {
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  transition: 0.3s;
+  color: white;
+  cursor: pointer;
+}
+
+nav li a:active {
+  border: 2px solid white;
+  border-style: dotted;
+}
+
+nav li a:hover {
+  color: #ffbd39;
+}
+
+#navmenu {
+  display: none;
+  transition: 2s;
+}
+
+.menubtn {
+  font-size: large;
+  padding-top: 20px;
+}
+
+@media (min-width: 800px) {
+  header .menubtn {
+    display: none;
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .menubtn {
+    display: block;
+    float: right;
+    padding-right: 30px;
+    color: #ffffff;
+  }
+
+  nav {
+    margin-top: 60px;
+    padding-top: 50px;
+    display: none;
+    /* background-color: rgb(0, 0, 0); */
+    width: 100vw;
+    right: -100%;
+    padding-bottom: 30px;
+    position: absolute;
+    margin-top: 60px;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+
+  header {
+    border-bottom: 2px solid honeydew;
+    height: 40px;
+    padding-bottom: 20px;
+  }
+  
+#navmenu:checked ~ nav:hover {
+    display: block;
+    right: 0%;
+  
+    text-align: center;
+    background-color: rgba(101, 100, 100, 0.926);
+  }
+}
+
+header {
+  background-color: rgb(0, 0, 0) 000;
+}
+
+#navmenu:checked ~ nav {
+  display: block;
+  right: 0%;
+
+  text-align: center;
+  background-color: rgba(101, 100, 100, 0.926);
+}
+
+@media (max-width: 436px) {
+  .firstdiv h1 {
+    font-size: 20px;
+  }
+}
+
+/* Hom */
+.main_landing{
+  height: fit-content;
+  padding-bottom: 180px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+  /* background-image: url(IMG_20240609_142817-removebg-preview.png);
+  background-size: cover;
+  background-position:  top;
+  background-repeat: no-repeat; */
+}
+.main_landing h2{
+  font-size: 2rem ;
+  -webkit-text-stroke: 2px #000000;
+  margin-top: 0px;
+  padding-top: 100px;
+}
+.main_landing h1{
+  font-size: 13rem;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 2px #000000;
+  margin-bottom: 0px;
+}
+.main_landing a{
+  padding: 10px 60px;
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  transition: .4s;
+}
+.main_landing a:hover{
+  background-color: black;
+  color: #fff;
+}
+@media (max-width:570px) {
+  .main_landing a{
+      display: block;
+  }
+}
+@media (max-width:950px) {
+  .main_landing h1{
+      font-size: 7rem;
+  }
+}
+@media (max-width:500px) {
+  .main_landing h1{
+      font-size: 5rem;
+  }
+}
+
+/* about me section  */
+
+.about_me {
+  margin: 50px;
+  padding: 50px;
+  line-height: 30px;
+}
+
+.about_me h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #63875f;
+}
+
+.about_me p {
+  font-size: x-large;
+  color: rgb(97, 96, 96);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about_me span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(97, 96, 96);
+}
+
+.about_me i {
+  font-size: x-large;
+  gap: 20px;
+}
+
+#linkden {
+  margin-left: 20px;
+}
+
+@media (max-width: 720px) {
+  .about_me {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+.resume {
+  border-bottom: 2px solid greenyellow;
+  margin: 140px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .resume {
+    margin: 20px;
+  }
+}
+
+.resume h1 {
+  font-size: 4rem;
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 4px;
+  /* padding: 20px 4px;
+    shape-outside: margin-box; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resume h1 span {
+  color: #ffbd39;
+}
+
+/* Skills */
+
+.main_skills {
+  height: fit-content;
+  margin: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #000000;
+  background-size: cover;
+}
+
+.main_skills h2 {
+  font-size: xx-large;
+  color: #ffbd39;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.main_skills_div {
+  height: fit-content;
+  display: flex;
+  /* background-color: #0F172A; */
+  background: transparent;
+  margin: 100px;
+  margin-top: 80px;
+}
+
+.first_skills_div {
+  width: 50%;
+  height: 70vh;
+  padding: 20px;
+  line-height: 200%;
+}
+
+.first_skills_div h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffbd39;
+  font-size: xx-large;
+}
+
+.first_skills_div span {
+  padding: 3px 10px;
+  font-size: 16px;
+  transition: 0.4s;
+
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.first_skills_div span:hover {
+  background-color: #ffbd39;
+  color: rgb(0, 0, 0);
+  border-radius: 6px;
+  cursor: none;
+}
+
+.second_skills_div {
+  width: 50%;
+  height: fit-content;
+  /* background-color: #0F172A; */
+  background: transparent;
+}
+
+.second_skills_div img {
+  width: 100%;
+  margin-top: 0px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1460px) {
+  .main_skills_div {
+    margin: 100px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .first_skills_div {
+    padding: 10px;
+  }
+
+  .second_skills_div {
+    padding: 10px;
+  }
+
+  .main_skills_div {
+    margin: 10px;
+  }
+
+  .second_skills_div img {
+    translate: 0% 0%;
+  }
+}
+
+@media (max-width: 936px) {
+  .main_skills {
+    height: fit-content;
+  }
+
+  .first_skills_div {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .main_skills_div {
+    display: block;
+  }
+
+  .second_skills_div {
+    display: block;
+    width: 100%;
+  }
+
+  .second_skills_div img {
+    margin: 20px;
+    width: 80%;
+    overflow: auto;
+  }
+}
+
+/* Project section */
+
+.main_project {
+  border-radius: 10px 10px 10px 10px;
+}
+
+.in_main_project {
+  background-color: #000000;
+}
+
+.in_main_project h2 {
+  padding-top: 50px;
+  color: #ffffff;
+}
+
+.in_main_project {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  height: fit-content;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.main_project h2 {
+  font-size: xx-large;
+
+  color: #ffffff;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.in_main_project {
+  /* background-color: #0D0C33; */
+  /* background-image: url(imag/Untitled\ design.png); */
+  background-color: #000000;
+  background-position: 3 3;
+  border-radius: 10px;
+}
+
+.in_main_project .first_project {
+  height: 120px;
+  display: inline-block;
+  width: 500px;
+  margin: 40px;
+  /* background-color: red; */
+  border: 1px solid aliceblue;
+  border-radius: 10px;
+  background: none;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  transition: 0.4s;
+  border-top: 14px solid #000000;
+  color: #423b3b;
+}
+
+.in_main_project .first_project:hover {
+  background-color: #1a1a1a;
+
+  color: #ffbd39;
+  border: 1px groove #ffbd39;
+  border-top: 14px groove #ffbd39;
+}
+
+.in_main_project .first_project:active {
+  border: 2px solid #63875f;
+  border-style: dashed;
+}
+
+.in_main_project .first_project a {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.in_main_project .first_project span {
+  padding: 3px 13px;
+  border: 1px solid aliceblue;
+  float: right;
+  margin-right: 10px;
+  border-radius: 20px;
+  color: #ffe6e6;
+  background-color: rgba(128, 128, 128, 0.518);
+}
+
+.in_main_project .first_project span:hover {
+  background: none;
+}
+
+.in_main_project .first_project p {
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 610px) {
+  .in_main_project {
+    margin: 0;
+    padding-top: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-bottom: 40px;
+  }
+
+  .in_main_project .first_project {
+    width: 90%;
+    margin: 0px;
+    margin-top: 60px;
+    line-height: 20px;
+  }
+}
+
+/*exprience Section Start  */
+
+.main_exprience {
+  height: 100vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #000000;
+}
+
+.main_exprience .first_exprience .heading_exp {
+  padding: 20px;
+  padding-top: 10px;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.main_exprience .first_exprience .heading_exp h1 {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.main_exprience .first_exprience .heading_exp span {
+  font-size: 30px;
+  color: #ffbd39;
+  font-weight: 100;
+}
+
+.main_exprience .first_exprience .intrdiv {
+  margin-top: 10vh;
+  height: fit-content;
+  width: fit-content;
+  display: inline;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 20px;
+  padding-right: 50px;
+  padding: 50px;
+  margin: 40px;
+}
+
+.divagain {
+  display: flex;
+}
+
+.main_exprience .first_exprience .intrdiv span {
+  color: #ffbd39;
+  font-weight: bold;
+  font: 3.5rem sans-serif;
+}
+
+.main_exprience .first_exprience .intrdiv p {
+  font-size: 4.6rem;
+  margin-top: -3px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+@media (max-width: 508px) {
+    .main_exprience .first_exprience .intrdiv {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .Celebal{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 860px) {
+  .main_exprience .first_exprience .intrdiv {
+    text-align: center;
+    padding: 0px;
+    margin: 40px;
+  }
+  
+}
+
+.intrdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* education section */
+
+.education {
+  height: fit-content;
+  padding-bottom: 100px;
+  background-color: rgb(0, 0, 0);
+}
+
+.main_education {
+  display: inline-block;
+}
+
+.first_education {
+  height: fit-content;
+  width: auto;
+  display: inline-block;
+  margin: 30px;
+  background-color: rgb(85, 79, 79);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  transition: .4s;
+}
+
+.first_education:hover{
+    /* background-color: rgba(128, 128, 128, 0.724); */
+    background-color: #ffbd39e1;
+    color: #ffe6e6;
+}
+
+.first_education img {
+  width: 100%;
+}
+
+.main_education {
+  text-align: left;
+}
+
+.main_education h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(180, 177, 177);
+  font-size: x-large;
+  letter-spacing: 3px;
+}
+
+.main_education span {
+  margin-top: -12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+@media (max-width:570px) {
+    .first_education{
+        width: 100%;
+        margin: 0px;
+        margin-top: 50px;
+        
+    }
+    .main_education{
+        padding: 20px;
+    }
+}
+/* diff---------------------------- */
+
+@media (max-width: 600px) {
+  html {
+    background-color: #000000;
+  }
+
+  .maindiv i {
+    color: #fff;
+  }
+
+  .maindiv h1 a {
+    color: #fff;
+  }
+
+  .maindiv .firstdiv h1 {
+    color: #ffffff;
+  }
+
+  .maindiv .firstdiv a {
+    color: #fff;
+  }
+
+  .main-containr {
+    background-color: black;
+  }
+}
+
+@media (max-width: 508px) {
+    .main_exprience .first_exprience .intrdiv {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .Celebal{
+        font-size: .1rem;
+    }
+}
+
+/* footr */
+
+.footr i{
+  margin: 20px;
+  transition: .5s;
+}
+.footr i:hover{
+  color: #fff;
+}
+
+.my_work{
+  height: fit-content;
+  padding:20px;
+  background-color: #ffffff;
+}
+
+.my_work .first_work{
+  height: fit-content;
+  padding: 40px;
+  background-color: rgb(38, 36, 40);
+  width: fit-content;
+  margin: 20px;
+  box-shadow: 2px 2px 15px aliceblue;
+  display: inline-block;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
